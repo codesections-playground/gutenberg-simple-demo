@@ -1,10 +1,14 @@
+{% import "css_macros.html" as css %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Gutenberg Demo</title>
     <meta charset="UTF-8">
     <style>
-      {% include "css.html" %}
+      {{ css::global_styles() }}
+      {% block page_specific_styles %}
+      {% endblock page_specific_styles %}
     </style>
   </head>
   <nav>
