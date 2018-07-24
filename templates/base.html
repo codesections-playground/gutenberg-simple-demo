@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Gutenberg Demo</title>
+    <meta charset="UTF-8">
+    <style>
+      {% include "css.html" %}
+    </style>
+  </head>
+  <nav>
+    <a href="/">Home</a> | <a href="/about">About</a>
+  </nav>
+
+  <body>
+    {% block content %}
+    {% endblock content %}
+  </body>
+</html>
